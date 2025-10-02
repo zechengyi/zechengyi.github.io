@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'JBFont';
+  src: url('din-next-w01-light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Radley', serif;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 20px;
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Radley', serif;
+}
+
+body {
+    font: 20px/1.5 JBFont;
+    font-size: 20px;
+	margin: 50px 150px 50px 150px;
+    font-style: normal;
+    zoom: 80%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #576A4F
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #576A4F
+}
+
+a:visited {
+    color: #576A4F
+}
+
+
+
+.centered-block {
+            text-align: center; /* Centers the entire block */
+}
+
+p {
+            display: inline-block; /* Keeps text within its inline block */
+            text-align: left; /* Keeps text aligned left within the centered block */
+            margin: 10px 10px 10px 10px;
+}
+
+ul, ol, li{
+  font-family: Helvetica, san-serif, Arial;
+  font-size: 20px;
+  font-style: normal;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 275px;
+}
+
+
