@@ -131,4 +131,9 @@ ul, ol, li {
   content: "";
 }
 
+.scaled {
+  transform: scale(0.8);
+}
+
+
 
