@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'JBFont';
+  src: url('din-next-w01-light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Radley', serif;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 20px;
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Radley', serif;
+    font-size: 23px;
+}
+
+h2 {
+    font-family: JBFont;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 20px/1.5 JBFont;
+  display: grid;
+  place-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #576A4F
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #576A4F
+}
+
+a:visited {
+    color: #576A4F
+}
+
+
+
+.centered-block {
+            text-align: center; /* Centers the entire block */
+}
+
+p {
+            display: inline-block; /* Keeps text within its inline block */
+            text-align: left; /* Keeps text aligned left within the centered block */
+            margin: 10px 0px 0px 0px;
+}
+
+ul, ol, li {
+  font-family: Helvetica, san-serif, Arial;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 5px;
+}
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;   /* align tops */
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.left {
+  flex: 0 0 auto;            /* width = image width only */
+  display: flex;
+  align-items: flex-start;
+}
+
+.left img {
+  display: block;            /* remove inline baseline quirks */
+  max-width: 220px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.right {
+  flex: 1;
+  max-width: 680px;
+}
+
+.right h2 {
+  margin: 0;                 /* kill default top margin */
+  line-height: 1;            /* tighter cap-height so it sits higher */
+}
+
+.right p {
+  margin-top: 0.4rem;        /* small space under the name */
+}
+
+.right .compact-p {
+  font-size: 0.9em;      /* smaller font */
+  font-weight: 500;      /* slightly bolder */
+  line-height: 1.0;      /* tighter vertical spacing */
+  margin: 0.5rem 0;      /* less space above/below */
+}
+
+/* Adjust <br> only inside this paragraph */
+.right .compact-p br {
+  display: block;
+  margin-bottom: 0.1em;  /* small gap after each break */
+  content: "";
+}
+
+
